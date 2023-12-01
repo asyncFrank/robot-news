@@ -1,3 +1,5 @@
+import { Category, Cultivation } from "./typings"
+
 export const categories: Category[]=[
     'sementes',
     'agroquímicos',
