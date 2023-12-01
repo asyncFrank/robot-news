@@ -6,7 +6,7 @@ type Props = {
   article: Article;
 };
 
-const ReadMoreButton = ({ article }: Article) => {
+const ReadMoreButton = ({ article }: Props) => {
   const router = useRouter();
 
   const handleClick = () => {
