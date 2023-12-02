@@ -1,9 +1,9 @@
 "use client";
-import { Article } from "../../typings";
+import { ArticleProps } from "../../typings";
 import { useRouter } from "next/navigation";
 
 type Props = {
-  article: Article;
+  article: ArticleProps;
 };
 
 const ReadMoreButton = ({ article }: Props) => {
