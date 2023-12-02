@@ -1,5 +1,5 @@
 import { fecthArticle } from "../../../lib/fetchNews";
-import { Article, SlugProps } from "../../../typings";
+import { ArticleProps, SlugProps } from "../../../typings";
 import { notFound } from "next/navigation";
 type Props = {
   searchParams?: SlugProps;
@@ -12,7 +12,7 @@ const ArticlePage = async ({ searchParams }: Props) => {
     return notFound();
   }
   const newsId = searchParams.newsId;
-  const slgArticle: Article = await fecthArticle(newsId);
+  const slgArticle: ArticleProps = await fecthArticle(newsId);
   //    console.log(data)
 
   return (
