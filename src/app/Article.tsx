@@ -1,8 +1,8 @@
-import { Article } from "../../typings";
+import { ArticleProps } from "../../typings";
 import ReadMoreButton from "./ReadMoreButton";
 
 type Props = {
-  article: Article;
+  article: ArticleProps;
 };
 
 const Article = ({ article }: Props) => {
