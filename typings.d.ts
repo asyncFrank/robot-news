@@ -1,4 +1,4 @@
-type Article = {
+type ArticleProps = {
   _id:string;
   title: string;
   subtitle:string;
@@ -22,6 +22,7 @@ type NewsResponse = {
   total: Number;
   data: Article[] ;
 };
+
 
 type Category =
   | "sementes"
@@ -56,3 +57,5 @@ export interface FilterProps {
 export interface SlugProps{
   newsId: string;
 }
+
+

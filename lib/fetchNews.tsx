@@ -1,7 +1,7 @@
 import axios from "axios";
 import { Cultivation, FilterProps } from "../typings";
-
-const urlBase = "https://sacci-agk.onrender.com" + "/api/news";
+const urlBase = "http://localhost:9002" + "/api/news";
+// const urlBase = "https://sacci-agk.onrender.com" + "/api/news";
 
 export const fetchNewsA = async (filters: FilterProps) => {
   const { term } = filters;
@@ -9,7 +9,7 @@ export const fetchNewsA = async (filters: FilterProps) => {
 
   return response.data;
 };
-export const fecthArticle = async (newsId:string) => {
+export const fecthArticle = async (newsId: string) => {
   // const { _id } = filters;
   const response = await axios.get(`${urlBase}/article/?newsId=${newsId}`);
 

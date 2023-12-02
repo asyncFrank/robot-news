@@ -1,16 +1,26 @@
-import { NewsResponse } from "../../typings";
+
+import { ArticleProps } from "../../typings";
 import Article from "./Article";
 
 type Props = {
-  news: NewsResponse;
+  newsProps: ArticleProps[];
 };
 
-const NewsList = ({ news }: Props) => {
+const NewsList = ({ newsProps }:Props) => {
+
+ 
   return (
     <main className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-10 gap-10">
-      {news.news?.map((article) => (
+      {/* {newsProps.?.map((article) => (
         <Article key={article.title} article={article} />
-      ))}
+      ))} */}
+      
+      {
+        newsProps.map((article)=>(
+          <Article key={article.title} article={article}/>
+        ))
+      }
+      
     </main>
   );
 };
