@@ -1,10 +1,12 @@
 import { fetchNewsA } from "../../lib/fetchNews";
-import { NewsResponse } from "../../typings";
+import { HomeProps } from "../../typings";
 import NewsList from "./NewsList";
 
-export default async function Home({ searchParams }) {
-  // const term = searchParams?.term;
-  // fetch data news cultivations.join()
+// type Props={
+//   term:string;
+// }
+export default async function Home({searchParams}:HomeProps) {
+  
   const data =  await fetchNewsA({term: searchParams?.term || "",})
   // console.log(data)
   return (

@@ -1,6 +1,6 @@
 import axios from "axios";
 import { Cultivation, FilterProps } from "../typings";
-// const urlBase = "http://localhost:9002" + "/api/news";
+
 const urlBase = "https://sacci-agk.onrender.com" + "/api/news";
 
 export const fetchNewsA = async (filters: FilterProps) => {
