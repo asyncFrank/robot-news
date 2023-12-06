@@ -29,7 +29,7 @@ const ArticlePage = async ({ searchParams }: Props) => {
         />
         <div className="px-10">
           <h1 className="headerTitle px-0 no-underline pb-2">
-            {slgArticle.title}
+            {slgArticle.title} aqui
           </h1>
         </div>
         {/* <div className="flex divide-x-0 space-x-4"> */}
