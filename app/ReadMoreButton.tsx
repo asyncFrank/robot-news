@@ -1,5 +1,5 @@
 "use client";
-import { ArticleProps } from "../../typings";
+import { ArticleProps } from "../typings";
 import { useRouter } from "next/navigation";
 
 type Props = {
@@ -10,13 +10,16 @@ const ReadMoreButton = ({ article }: Props) => {
   const router = useRouter();
 
   const handleClick = () => {
-    // const queryString = Object.entries(article)
-    //   .map(([key, value]) => `${key}=${value}`)
-    //   .join("&");
-    const { _id } = article;
+    const queryString = Object.entries(article)
+      .map(([key, value]) => `${key}=${value}`)
+      .join("&");
+    const url = `/article?${queryString}`
 
-    const url = `/article?newsId=${_id}`;
-   
+    console.log(url)
+    // const { _id } = article;
+
+    // const url = `/article?newsId=${_id}`;
+
     router.push(url);
   };
   return (
