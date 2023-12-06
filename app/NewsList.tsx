@@ -1,5 +1,5 @@
 
-import { ArticleProps } from "../../typings";
+import { ArticleProps } from "../typings";
 import Article from "./Article";
 
 type Props = {
