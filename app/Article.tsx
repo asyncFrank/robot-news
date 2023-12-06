@@ -1,4 +1,4 @@
-import { ArticleProps } from "../../typings";
+import { ArticleProps } from "../typings";
 import ReadMoreButton from "./ReadMoreButton";
 
 type Props = {
