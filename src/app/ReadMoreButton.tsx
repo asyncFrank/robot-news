@@ -14,16 +14,18 @@ const ReadMoreButton = ({ article }: Props) => {
     //   .map(([key, value]) => `${key}=${value}`)
     //   .join("&");
     const { _id } = article;
-        
+
     const url = `/article?newsId=${_id}`;
-    console.log(url);
-    router.push(url)
+   
+    router.push(url);
   };
   return (
     <button
       onClick={handleClick}
       className="bg-orange-400 text-white h-10 rounded-b-lg dark:text-gray-900 hover:bg-orange-500"
-    >Detalhes</button>
+    >
+      Detalhes
+    </button>
   );
 };
 
