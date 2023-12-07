@@ -19,7 +19,7 @@ const ReadMoreButton = ({ article }: Props) => {
     // const { _id } = article;
 
     // const url = `/article?newsId=${_id}`;
-
+    console.log(url)
     router.push(url);
   };
   return (
