@@ -13,8 +13,8 @@ export const fetchNewsA = async (filters: FilterProps) => {
 };
 export const fetchNewsArticle = async (id: any) => {
   // const { _id } = filters;
-  const url_local = 'http://localhost:9002/api/news'
-  const response = await axios.get(`${url_local}/article?newsId=${id}`);
+  // const url_local = 'http://localhost:9002/api/news'
+  const response = await axios.get(`${urlBase}/article?newsId=${id}`);
 
   return response.data;
 };

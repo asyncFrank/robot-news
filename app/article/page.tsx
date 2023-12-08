@@ -1,8 +1,7 @@
 'use client'
-import {useSearchParams} from 'next/navigation'
+import { useSearchParams } from 'next/navigation';
 
-import { fetchNewsA, fetchNewsArticle } from "../../lib/fetchNews";
-import { ArticlePageProps, ArticleProps } from "../../typings";
+import { fetchNewsArticle } from "../../lib/fetchNews";
 
 
 
