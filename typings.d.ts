@@ -57,6 +57,9 @@ export interface FilterProps {
 export interface HomeProps{
   searchParams:FilterProps
 }
+export interface ArticlePageProps{
+  searchParams:FilterProps
+}
 
 export interface SlugProps{
   newsId: string;

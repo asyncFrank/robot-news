@@ -1,5 +1,7 @@
+'use client'
 import { notFound } from "next/navigation";
 import { ArticleProps } from "../../typings";
+import { useSearchParams } from "next/navigation";
 
 type Props = {
   searchParams?: ArticleProps;
@@ -12,7 +14,7 @@ const ArticlePage = ({ searchParams }: Props) => {
   ) {
     return notFound();
   }
-
+  
   const article: ArticleProps = searchParams;
 
   return (
