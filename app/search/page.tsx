@@ -1,14 +1,14 @@
-import { fechtNewsArticlesParticularTerm, fetchNewsArticleTerms } from "../../lib/fetchNews";
-import { ArticleProps } from "../../typings";
+// import { fechtNewsArticlesParticularTerm, fetchNewsArticleTerms } from "../../lib/fetchNews";
+// import { ArticleProps } from "../../typings";
 
-type Props = {
-  searchParams?: { term: string };
-};
+// type Props = {
+//   searchParams?: { term: string };
+// };
 
-async function SearchPage ({searchParams}:Props) {
+// async function SearchPage ({searchParams}:Props) {
 
-    const news : ArticleProps{} = await fechtNewsArticlesParticularTerm('general',searchParams?.term,true)
-  return <div>SearchPage</div>;
-};
+//     const news : ArticleProps{} = await fechtNewsArticlesParticularTerm('general',searchParams?.term,true)
+//   return <div>SearchPage</div>;
+// };
 
-export default SearchPage;
+// export default SearchPage;
