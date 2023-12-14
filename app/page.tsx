@@ -1,4 +1,4 @@
-import { fetchNewsA } from "../lib/fetchNews";
+import { fetchNewsArticleTerms } from "../lib/fetchNews";
 import { HomeProps } from '../typings'
 import NewsList from "./NewsList";
 
@@ -8,7 +8,7 @@ import NewsList from "./NewsList";
 export default async function Home({searchParams}:HomeProps) {
   //fetch news data
   //ainda nao colocaremos o tipo pois vem varios dados diferenets em data
-  const data =  await fetchNewsA({term: searchParams?.term || "",})
+  const data =  await fetchNewsArticleTerms({term: searchParams?.term || "",})
   // console.log(data)
   return (
     //  news list

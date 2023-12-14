@@ -30,9 +30,9 @@ const Article = ({ article }: Props) => {
         <div className="flex-1 flex flex-col p-5">
           <h2 className="font-bold font-serif">{article.title}</h2>
 
-          <section className="mt-2 flex-1">
+          <div className="mt-2 flex-1">
             <p className="text-xs line-clamp-6">{article.title}</p>
-          </section>
+          </div>
 
           <footer className="text-xs text-right ml-auto flex space-x-1 pt-5 italic text-gray-400">
             <p>{article.autor_materia}-</p>
